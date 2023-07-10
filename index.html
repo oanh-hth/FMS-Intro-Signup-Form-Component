@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css" />
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main>
+    <div class="container grid">
+      <div class="introduction grid">
+        <h1 class="introduction__title">Learn to code by watching others</h1>
+        <p class="introduction__content">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable.</p>
+      </div>
+      <div class="form grid">
+        <p class="form__caption"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        <form class="form__content grid">
+          <input type="text" aria-label="first name" name="firstName" placeholder="First Name" class="form__control" id="first-name"/>
+          <p class="form__error">First Name cannot be empty</p>
+          <input type="text" aria-label="last name" name="lastName" placeholder="Last Name" class="form__control" id="last-name"/>
+          <p class="form__error">Last Name cannot be empty</p>
+          <input type="email" aria-label="email" name="email" placeholder="Email Address" class="form__control" id="email"/>
+          <p class="form__error">Looks like this is not an email</p>
+          <input type="password" aria-label="password" name="password" placeholder="Password" class="form__control" id="password"/>
+          <p class="form__error">Password cannot be empty</p>
+          <button type="submit" class="form__submit">Claim your free trial</button>
+          <p class="form__status">Your information has been sent successfully!</p>
+          <p class="form__claim"><small>By clicking the button, you are agreeing to our <span>Terms and Services</span></small></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+<script src="./main.js"></script>
+</body>
+</html>
